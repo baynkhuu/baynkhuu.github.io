@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bio Century - Biologische Winkel</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Aptos, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
+            width: calc(100%);
         }
         .header {
             background-color: #4CAF50;
@@ -17,43 +18,73 @@
             padding: 20px;
             text-align: center;
         }
+	.header p {
+            font-size: 18px;
+	}
+
+        .logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+        }
         .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
             padding: 20px;
         }
+	.container p {
+            font-size: 18px;
+	}
         .content {
-            background-color: #fff;
+            flex: 1;
+            max-width: 600px;
             padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
         }
         .footer {
             background-color: #333;
             color: #fff;
-            padding: 10px;
+            padding: 20px;
             text-align: center;
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
+        }
+        .footer p {
+            margin: 5px 0;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
     <div class="header">
+        <img src="pictures\logo.jpg" alt="Bio Century Logo" class="logo">
         <h1>Bio Century</h1>
         <p>Uw biologische winkel in Geraardsbergen</p>
     </div>
     <div class="container">
         <div class="content">
             <h2>Welkom bij Bio Century!</h2>
-            <p>Ontdek ons assortiment van biologische producten van de hoogste kwaliteit. Van vers fruit en groenten tot zuivel en natuurlijke snacks, wij hebben alles wat u nodig heeft voor een gezonde levensstijl.</p>
-            <p>Breng een bezoek aan onze winkel en laat u inspireren door onze duurzame en milieuvriendelijke producten.</p>
-            <h3>Openingstijden</h3>
-            <p>Maandag - Vrijdag: 09:00 - 18:00</p>
-            <p>Weekend: Gesloten</p>
+            <p>Welkom bij Bio Century, jouw bestemming voor al je biologische behoeften in Geraardsbergen!</p>
+            <p>Bij Bio Century geloven we in de kracht van biologische voeding en duurzame producten om een gezonde levensstijl te ondersteunen en onze planeet te beschermen. Onze winkel biedt een uitgebreid assortiment aan biologische en natuurlijke producten, variërend van verse groenten en fruit tot droge kruidenierswaren, natuurlijke verzorgingsproducten en milieuvriendelijke huishoudelijke artikelen.</p>
+            <p>Of je nu op zoek bent naar verse, lokaal geproduceerde ingrediënten voor je volgende gezonde maaltijd, biologische snacks voor onderweg, of milieuvriendelijke alternatieven voor alledaagse producten, bij Bio Century vind je alles wat je nodig hebt om bewust te leven en te consumeren.</p>
+            <p>We heten je van harte welkom om onze winkel te verkennen. Ontdek de smaak van puurheid en de kracht van duurzaamheid bij Bio Century - jouw biologische bestemming in Geraardsbergen.</p>
+            <img src="pictures/winkel.png">
+            <img src="pictures/rek1.jpg">
+            <img src="pictures/brood.jpg">           
         </div>
     </div>
     <div class="footer">
+        <h3>Contactgegevens</h3>
+        <p>Openingsuren: 09:15u-18:00u, maandag tot vrijdag</p>
+        <p>Adres: Brugstraat 5, 9500 Geraardsbergen</p>
+        <p>Telefoon: 0484 60 98 12</p>
+        <p>E-mail: biocentury@hotmail.com</p>
+        </br>
         <p>&copy; 2024 Bio Century - Geraardsbergen</p>
     </div>
 </body>
