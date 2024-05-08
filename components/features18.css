@@ -38,11 +38,10 @@
   align-items: center;
 }
 .features18-image {
-  width: 506px;
-  height: 287px;
+  width: 666px;
+  height: 367px;
   object-fit: cover;
 }
-
 @media(max-width: 991px) {
   .features18-max-width {
     gap: var(--dl-space-space-twounits);
