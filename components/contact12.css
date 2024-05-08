@@ -1,0 +1,18 @@
+.contact12-container {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.contact12-max-width {
+  align-self: center;
+}
+.contact12-content {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.contact12-iframe {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,111 @@
+.features182-layout349 {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 0px;
+  flex-direction: column;
+}
+.features182-max-width {
+  gap: var(--dl-space-space-fiveunits);
+  display: flex;
+  align-items: center;
+}
+.features182-content {
+  gap: var(--dl-space-space-oneandhalfunits);
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.features182-section-title {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.features182-content1 {
+  gap: var(--dl-space-space-oneandhalfunits);
+  height: 333px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.features182-container {
+  flex: 0 0 auto;
+  width: auto;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.features182-container1 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.features182-container2 {
+  flex: 0 0 auto;
+  width: 223px;
+  height: 178px;
+  display: flex;
+  align-items: flex-start;
+}
+.features182-ul {
+  height: 130px;
+}
+.features182-text03 {
+  font-weight: 700;
+}
+.features182-text06 {
+  font-weight: 700;
+}
+.features182-text08 {
+  font-weight: 700;
+}
+.features182-text10 {
+  font-weight: 700;
+}
+.features182-text13 {
+  font-weight: 700;
+}
+.features182-text15 {
+  font-weight: 700;
+}
+.features182-text17 {
+  font-weight: 700;
+}
+.features182-container3 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: flex-start;
+}
+.features182-image-container {
+  flex: 1;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.features182-image {
+  width: 491px;
+  height: 362px;
+  object-fit: cover;
+}
+.features182-root-class-name {
+  fill: var(--dl-color-theme-neutral-dark);
+  color: var(--dl-color-theme-neutral-dark);
+}
+@media(max-width: 991px) {
+  .features182-max-width {
+    gap: var(--dl-space-space-twounits);
+    flex-direction: column-reverse;
+  }
+}

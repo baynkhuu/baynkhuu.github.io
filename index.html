@@ -1,91 +1,334 @@
 <!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bio Century - Biologische Winkel</title>
-    <style>
-        body {
-            font-family: Aptos, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            width: calc(100%);
-        }
-        .header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-	.header p {
-            font-size: 18px;
-	}
+<html lang="en"
+  ><head
+    ><title>Bio Century</title
+    ><meta property="og:title" content="Bio Century" /><meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" /><meta
+      charset="utf-8" /><meta
+      property="twitter:card"
+      content="summary_large_image" /><style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }</style
+    ><style data-tag="default-style-sheet">
+      html {
+        font-family: Noto Sans;
+        font-size: 16px;
+      }
 
-        .logo {
-            max-width: 200px;
-            height: auto;
-            margin-bottom: 10px;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: flex-start;
-            padding: 20px;
-        }
-	.container p {
-            font-size: 18px;
-	}
-        .content {
-            flex: 1;
-            max-width: 600px;
-            padding: 20px;
-            text-align: justify;
-        }
-        .content img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-        .footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        .footer p {
-            margin: 5px 0;
-            font-size: 18px;
-        }
-    </style>
-</head>
-<body>
-    <div class="header">
-        <img src="pictures\logo.jpg" alt="Bio Century Logo" class="logo">
-        <h1>Bio Century</h1>
-        <p>Uw biologische winkel in Geraardsbergen</p>
-    </div>
-    <div class="container">
-        <div class="content">
-            <h2>Welkom bij Bio Century!</h2>
-            <p>Welkom bij Bio Century, jouw bestemming voor al je biologische behoeften in Geraardsbergen!</p>
-            <p>Bij Bio Century geloven we in de kracht van biologische voeding en duurzame producten om een gezonde levensstijl te ondersteunen en onze planeet te beschermen. Onze winkel biedt een uitgebreid assortiment aan biologische en natuurlijke producten, variërend van verse groenten en fruit tot droge kruidenierswaren, natuurlijke verzorgingsproducten en milieuvriendelijke huishoudelijke artikelen.</p>
-            <p>Of je nu op zoek bent naar verse, lokaal geproduceerde ingrediënten voor je volgende gezonde maaltijd, biologische snacks voor onderweg, of milieuvriendelijke alternatieven voor alledaagse producten, bij Bio Century vind je alles wat je nodig hebt om bewust te leven en te consumeren.</p>
-            <p>We heten je van harte welkom om onze winkel te verkennen. Ontdek de smaak van puurheid en de kracht van duurzaamheid bij Bio Century - jouw biologische bestemming in Geraardsbergen.</p>
-            <img src="pictures/winkel.png">
-            <img src="pictures/rek1.jpg">
-            <img src="pictures/brood.jpg">           
-        </div>
-    </div>
-    <div class="footer">
-        <h3>Contactgegevens</h3>
-        <p>Openingsuren: 09:15u-18:00u, maandag tot vrijdag</p>
-        <p>Adres: Brugstraat 5, 9500 Geraardsbergen</p>
-        <p>Telefoon: 0484 60 98 12</p>
-        <p>E-mail: biocentury@hotmail.com</p>
-        </br>
-        <p>&copy; 2024 Bio Century - Geraardsbergen</p>
-    </div>
-</body>
-</html>
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background-color: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }</style
+    ><link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css" /><link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font" /><link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font" /><link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" /></head
+  ><body
+    ><link rel="stylesheet" href="./style.css" /><div
+      ><link href="./index.css" rel="stylesheet" /><div class="home-container"
+        ><div class="home-navbar1"
+          ><div class="navbar4-container"
+            ><header data-thq="thq-navbar" class="navbar4-navbar-interactive"
+              ><img
+                alt="image"
+                src="public/logo-200h.jpg"
+                class="navbar4-image"
+              /><div class="navbar4-container1"
+                ><div data-thq="thq-navbar-nav" class="navbar4-desktop-menu"
+                  ><nav class="navbar4-links"
+                    ><span class="thq-body-small thq-link"
+                      ><span>Home</span></span
+                    ></nav
+                  ><div class="navbar4-buttons"></div></div></div
+              ><div data-thq="thq-burger-menu" class="navbar4-burger-menu"
+                ><svg viewBox="0 0 1024 1024" class="navbar4-icon">
+                  <path
+                    d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path></svg></div
+              ><div data-thq="thq-mobile-menu" class="navbar4-mobile-menu"
+                ><div class="navbar4-nav"
+                  ><div class="navbar4-top"
+                    ><img alt="Biological Store" class="navbar4-logo" /><div
+                      data-thq="thq-close-menu"
+                      class="navbar4-close-menu"
+                      ><svg viewBox="0 0 1024 1024" class="navbar4-icon2">
+                        <path
+                          d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                        ></path></svg></div></div
+                  ><nav class="navbar4-links1"
+                    ><span class="thq-body-small thq-link"
+                      ><span>Home</span></span
+                    ><span class="thq-body-small thq-link">Shop</span
+                    ><span class="thq-body-small thq-link">About Us</span
+                    ><span class="thq-body-small thq-link">Contact</span
+                    ><span class="thq-body-small thq-link">Link5</span></nav
+                  ></div
+                ><div class="navbar4-buttons1"
+                  ><button class="thq-button-filled">Login</button
+                  ><button class="thq-button-outline">Register</button></div
+                ></div
+              ></header
+            ></div
+          ></div
+        ><div class="home-hero2"
+          ><div class="hero3-header9"
+            ><img
+              alt="image"
+              src="public/kassa-1500w.jpg"
+              class="hero3-image"
+            /><div class="hero3-content thq-section-padding"
+              ><div class="hero3-max-width thq-section-max-width thq-flex-row"
+                ><div class="hero3-column"
+                  ><h1 class="hero3-text thq-heading-1"
+                    ><span>Uw biologische winkel in Geraardsbergen</span></h1
+                  ></div
+                ></div
+              ></div
+            ></div
+          ></div
+        ><div
+          class="features182-layout349 thq-section-padding features182-root-class-name"
+          ><div class="features182-max-width thq-section-max-width"
+            ><div class="features182-content"
+              ><div class="features182-section-title"
+                ><div class="features182-content1"
+                  ><h2 class="thq-heading-2"><span>Openingsuren</span></h2
+                  ><p class="thq-body-large"
+                    ><span
+                      >Kom gerust langs tijdens onze openingstijden!</span
+                    ></p
+                  ><div class="features182-container"
+                    ><div class="features182-container1"
+                      ><div class="features182-container2"
+                        ><ul class="features182-ul list"
+                          ><li class="list-item"
+                            ><span
+                              ><span class="features182-text03">Maandag</span
+                              ><span>:</span></span
+                            ></li
+                          ><li class="list-item"
+                            ><span
+                              ><span class="features182-text06">Dinsdag</span
+                              ><span>:</span></span
+                            ></li
+                          ><li class="list-item"
+                            ><span class="features182-text08"
+                              >Woensdag:</span
+                            ></li
+                          ><li class="list-item"
+                            ><span
+                              ><span class="features182-text10">Donderdag</span
+                              ><span>:</span></span
+                            ></li
+                          ><li class="list-item"
+                            ><span
+                              ><span class="features182-text13">Vrijdag</span
+                              ><span>:</span></span
+                            ></li
+                          ><li class="list-item"
+                            ><span class="features182-text15"
+                              >Zaterdag:</span
+                            ></li
+                          ><li class="list-item"
+                            ><span
+                              ><span class="features182-text17">Zondag</span
+                              ><span>:</span></span
+                            ></li
+                          ></ul
+                        ></div
+                      ><div class="features182-container3"></div></div
+                    ><ul class="list"
+                      ><li class="list-item"><span>09:15 - 18:00 uur</span></li
+                      ><li class="list-item"><span>09:15 - 18:00 uur</span></li
+                      ><li class="list-item"><span>09:15 - 18:00 uur</span></li
+                      ><li class="list-item"><span>09:15 - 18:00 uur</span></li
+                      ><li class="list-item"><span>09:15 - 18:00 uur</span></li
+                      ><li class="list-item"><span>gesloten</span></li
+                      ><li class="list-item"><span>gesloten</span></li></ul
+                    ></div
+                  ></div
+                ></div
+              ></div
+            ><div class="features182-image-container"
+              ><img
+                src="public/winkel-400h.png"
+                alt="image"
+                class="features182-image" /></div></div></div
+        ><div class="home-features5"
+          ><div
+            class="features171-layout349 thq-section-padding features171-root-class-name"
+            ><div class="features171-max-width thq-section-max-width"
+              ><div class="features171-image-container"
+                ><img
+                  alt="image"
+                  src="public/rek1-400h.jpg"
+                  class="features171-image" /></div
+              ><div class="features171-content"
+                ><div class="features171-section-title"
+                  ><div class="features171-content1"
+                    ><h2 class="thq-heading-2"
+                      ><span>Uitgebreid assortiment</span></h2
+                    ><p class="thq-body-large"
+                      ><span
+                        >Onze winkel biedt een uitgebreid assortiment aan
+                        biologische en natuurlijke producten, variërend van
+                        droge kruidenierswaren tot natuurlijke
+                        verzorgingsproducten en milieuvriendelijke
+                        huishoudelijke artikelen.</span
+                      ></p
+                    ></div
+                  ></div
+                ></div
+              ></div
+            ></div
+          ></div
+        ><div
+          class="features18-layout349 thq-section-padding features18-root-class-name"
+          ><div class="features18-max-width thq-section-max-width"
+            ><div class="features18-content"
+              ><div class="features18-section-title"
+                ><div class="features18-content1"
+                  ><h2 class="thq-heading-2"><span>Vers brood</span></h2
+                  ><p class="thq-body-large"
+                    ><span
+                      >Ontdek ons vers biologisch brood, exclusief verkrijgbaar
+                      op vrijdag na bestelling! Geniet van een uitgebreid
+                      assortiment, van zachte volkorenbroden tot smaakvolle
+                      zuurdesems. Kom langs of bel ons om jouw favoriete brood
+                      voor het weekend te bestellen!</span
+                    ></p
+                  ></div
+                ></div
+              ></div
+            ><div class="features18-image-container"
+              ><img
+                alt="image"
+                src="public/brood-600w.jpg"
+                class="features18-image" /></div></div></div
+        ><div class="home-contact10"
+          ><div class="contact4-contact20 thq-section-padding"
+            ><div class="contact4-max-width thq-section-max-width"
+              ><div class="contact4-section-title"
+                ><div class="contact4-content"
+                  ><h2 class="thq-heading-2"><span>Contact</span></h2
+                  ><p class="contact4-text1 thq-body-large"
+                    ><span
+                      >Heb je nog vragen of wil je meer informatie? Aarzel niet
+                      om contact met ons op te nemen.</span
+                    ></p
+                  ></div
+                ></div
+              ><div class="contact4-row"
+                ><div class="contact4-content1"
+                  ><svg viewBox="0 0 1024 1024" class="thq-icon-medium">
+                    <path
+                      d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z"
+                    ></path></svg
+                  ><div class="contact4-contact-info"
+                    ><div class="contact4-content2"
+                      ><h3 class="contact4-text2 thq-heading-3">Email</h3></div
+                    ><span class="contact4-email thq-body-small"
+                      ><span>bio-century@hotmail.com</span></span
+                    ></div
+                  ></div
+                ><div class="contact4-content3"
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    class="contact4-icon2 thq-icon-medium"
+                  >
+                    <path
+                      d="M282 460q96 186 282 282l94-94q20-20 44-10 72 24 152 24 18 0 30 12t12 30v150q0 18-12 30t-30 12q-300 0-513-213t-213-513q0-18 12-30t30-12h150q18 0 30 12t12 30q0 80 24 152 8 26-10 44z"
+                    ></path></svg
+                  ><div class="contact4-contact-info1"
+                    ><div class="contact4-content4"
+                      ><h3 class="contact4-text3 thq-heading-3"
+                        >Telefoon</h3
+                      ></div
+                    ><span class="contact4-phone thq-body-small"
+                      ><span>+32 484 60 98 12</span></span
+                    ></div
+                  ></div
+                ><div class="contact4-content5"
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    class="contact4-icon4 thq-icon-medium"
+                  >
+                    <path
+                      d="M512 0c-176.732 0-320 143.268-320 320 0 320 320 704 320 704s320-384 320-704c0-176.732-143.27-320-320-320zM512 512c-106.040 0-192-85.96-192-192s85.96-192 192-192 192 85.96 192 192-85.96 192-192 192z"
+                    ></path></svg
+                  ><div class="contact4-contact-info2"
+                    ><div class="contact4-content6"
+                      ><h3 class="contact4-text4 thq-heading-3">Adres</h3></div
+                    ><span class="contact4-address thq-body-small"
+                      ><span>Brugstraat 5, 9500 Geraardsbergen</span></span
+                    ></div
+                  ></div
+                ></div
+              ></div
+            ></div
+          ></div
+        ><div class="home-footer11"
+          ><div class="footer15-container thq-section-padding"
+            ><div class="footer15-max-width thq-section-max-width"
+              ><div class="footer15-content"
+                ><div class="footer15-container1"
+                  ><img
+                    alt="image"
+                    src="public/logo-200h.jpg"
+                    class="footer15-image" /><div class="footer15-social-links"
+                    ><a
+                      href="https://www.facebook.com/BioCentury/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="footer15-link"
+                      ><svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="footer15-icon thq-icon-small"
+                      >
+                        <path
+                          d="M713.143 73.143c90.857 0 164.571 73.714 164.571 164.571v548.571c0 90.857-73.714 164.571-164.571 164.571h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571c0-38.286 10.286-64 65.714-64l69.714-0.571v-118.286c-12-1.714-53.714-5.143-101.714-5.143-101.143 0-170.857 61.714-170.857 174.857v97.714h-114.286v132.571h114.286v340h-304c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571z"
+                        ></path></svg></a
+                    ><a
+                      href="https://www.instagram.com/biocenturygeraardsbergen/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="footer15-link1"
+                      ><svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="footer15-icon2 thq-icon-small"
+                      >
+                        <path
+                          d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                        ></path></svg></a></div></div></div
+              ><div class="footer15-credits"
+                ><div class="footer15-row"
+                  ><div class="footer15-credits1"></div></div
+                ><span class="footer15-content3 thq-body-small"
+                  ><span>© 2024 Bio Century - Geraardsbergen</span></span
+                ></div
+              ></div
+            ></div
+          ></div
+        ></div
+      ></div
+    >
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script></body
+></html>
