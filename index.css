@@ -85,6 +85,7 @@
   bottom: 0px;
   height: 100%;
   position: absolute;
+  filter: brightness(65%);
 }
 .banner3-max-width {
   gap: var(--dl-space-space-oneandhalfunits);
@@ -105,18 +106,20 @@
 }
 .banner3-title {
   color: #fffcfc;
-  font-size: 65;
+  font-size: 60px;
   font-style: normal;
   text-align: center;
   font-family: "Arial Black";
   font-weight: 600;
   text-transform: capitalize;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 .banner3-text {
   color: #fdfdfd;
-  font-size: 35px;
+  font-size: 30px;
   text-align: center;
   font-family: "Arial Black";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 .features183-layout349 {
