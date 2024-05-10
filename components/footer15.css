@@ -77,7 +77,7 @@
     align-self: center;
   }
 }
-@media(max-width: 767px) {
+@media(max-width: 800px) {
   .footer15-content {
     gap: var(--dl-space-space-twounits);
     width: auto;

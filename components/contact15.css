@@ -159,8 +159,38 @@
 .contact15-email1 {
   text-align: center;
 }
-@media(max-width: 767px) {
+@media(max-width: 800px) {
   .contact15-row {
     flex-direction: column;
+  }
+  .contact15-content1 {
+    width: 100%;
+  }
+  .contact15-content3 {
+    width: 100%;
+  }
+  .contact15-content5 {
+    width: 100%;
+  }
+  .contact15-content7 {
+    width: 100%;
+  }
+}
+@media(max-width: 479px) {
+  .contact15-row {
+    width: 100%;
+  }
+  .contact15-content1 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .contact15-content3 {
+    width: 100%;
+  }
+  .contact15-content5 {
+    width: 100%;
+  }
+  .contact15-content7 {
+    width: 100%;
   }
 }
