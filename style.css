@@ -24,8 +24,12 @@
   --dl-color-theme-secondary2: #E0D1CB;
   --dl-space-space-threeunits: 48px;
   --dl-color-theme-neutral-dark: #191818;
+  --dl-radius-radius-cardradius: 8px;
   --dl-color-theme-neutral-light: #FBFAF9;
   --dl-radius-radius-card-radius: 8px;
+  --dl-radius-radius-imageradius: 8px;
+  --dl-radius-radius-inputradius: 24px;
+  --dl-radius-radius-buttonradius: 24px;
   --dl-radius-radius-image-radius: 8px;
   --dl-radius-radius-input-radius: 24px;
   --dl-radius-radius-button-radius: 24px;
@@ -324,6 +328,7 @@
   text-align: center;
   vertical-align: middle;
 }
+
 .Content {
   font-size: 16px;
   font-family: Noto Sans;
