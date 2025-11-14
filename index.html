@@ -134,26 +134,29 @@
 									<li>Ik kom in het weekend langs om het probleem te analyseren. Op weekavonden na 18:00 uur is dit ook mogelijk tegen een toeslag van €50.</li>
 									<li>Als het probleem direct kan worden opgelost, dan doe ik dat meteen.</li>
 								</ol>
-
-								<form method="post" action="#">
+								
+								<form action="https://api.web3forms.com/submit" method="POST">
+									<input type="hidden" name="access_key" value="b6acc5c7-d64b-4cf5-aeea-a6193dd1a5fd">
+								  
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Naam</label>
-											<input type="text" name="name" id="name" />
+											<input type="text" name="name" id="name" required>
 										</div>
 										<div class="field half">
 											<label for="email">E-mail</label>
-											<input type="text" name="email" id="email" />
+											<input type="email" name="email" id="email" required>
 										</div>
 										<div class="field">
 											<label for="message">Bericht</label>
-											<textarea name="message" id="message" rows="4"></textarea>
+											<textarea name="message" id="message" rows="4" required></textarea>
 										</div>
 									</div>
+									
 									<ul class="actions">
 										<li><input type="submit" value="Verstuur bericht" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
 									</ul>
+								  
 								</form>
 							</article>
 					</div>
@@ -173,5 +176,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://web3forms.com/client/script.js" async defer></script>
 	</body>
 </html>
